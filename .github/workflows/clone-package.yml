@@ -51,8 +51,8 @@ jobs:
           # sed -i "/\bdepends=/s/)/ \'xpto\')/" PKGBUILD
           # sed -i "/makedepends=/s/)/ \'xpto\')/" PKGBUILD
           # sed -i '/\bdepends=/!b; :a; n; a\    xpto' PKGBUILD
-          sed -i '/pkgver=/s/+/_/g' PKGBUILD
-          sed -i '/rev-list/s/+/_/g' PKGBUILD
+          sed -i '/pkgver=/s/+.*//' PKGBUILD
+          sed -i '/^pkgver()/,/^}$/d' PKGBUILD
 
       - name: Update github
         shell: bash
