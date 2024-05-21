@@ -6,7 +6,7 @@
 _basename=qt5-wayland
 pkgname=qt5-wayland-decorations
 _basever=5.15.13
-pkgver=5.15.13+kde+r60
+pkgver=5.15.13_kde_r60
 pkgrel=1
 _commit=9c82b5461736f59a06923ab68c6f7584ecab4f77
 _patchcommit=1d8e08648debad9741dca0820f5f0e91633b5a4e
