@@ -6,7 +6,7 @@
 _basename=qt5-wayland
 pkgname=qt5-wayland-decorations
 _basever=5.15.13
-pkgver=5.15.13+kde+r60
+pkgver=5.15.13
 pkgrel=1
 _commit=9c82b5461736f59a06923ab68c6f7584ecab4f77
 _patchcommit=1d8e08648debad9741dca0820f5f0e91633b5a4e
@@ -24,10 +24,6 @@ source=(git+https://invent.kde.org/qt/qt/$_pkgfqn#commit=$_commit
 sha256sums=('SKIP'
             '4d8c5d686666cbaae7550ec3defee66ea56ca624152c56c51ff945693706c29d')
 
-pkgver() {
-  cd $_pkgfqn
-  echo "$_basever_kde_r"`git rev-list --count v$_basever-lts-lgpl..$_commit` | sed -e 's|_kde_r0||'
-}
 
 prepare() {
   mkdir -p build
